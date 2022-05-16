@@ -1,1 +1,2 @@
-window.alert("Hello, World!")
+window.alert("Hello, World! win alert")
+document.write("Hello, World! doc write")
