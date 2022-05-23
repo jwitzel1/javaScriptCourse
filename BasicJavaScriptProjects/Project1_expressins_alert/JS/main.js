@@ -6,7 +6,7 @@ document.write(C); // writing the above
 var D = "t1";
 var E = "t2";
 var F = D + " & " + E;
-document.write(D + " & " + E + "is the same as "+ F);
+document.write(D + " & " + E + "is the same as "+ F); // 4 prev lines concat text from variables either in var or in command. both work.
 var x1=10, x2=30, x3=50, y1="hello", y2="howdy", y3="hi"; // comma separated variable declaration
 var y1=y1.fontcolor("red"); // assigning colors to variable entity 1
 var y2=y2.fontcolor("green"); // assigning colors to variable entity 2
