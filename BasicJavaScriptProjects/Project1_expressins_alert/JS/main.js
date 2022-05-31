@@ -19,6 +19,6 @@ document.write(D + " & " + E + "is the same as "+ F); // 4 prev lines concat tex
 var x1=10, x2=30, x3=50, y1="hello", y2="howdy", y3="hi"; // comma separated variable declaration
 var y1=y1.fontcolor("red"); // assigning colors to variable entity 1
 var y2=y2.fontcolor("green"); // assigning colors to variable entity 2
-var y3.y3.fontcolor("yellow"); // assigning colors to variable entity 3
+var y3=y3.fontcolor("yellow"); // assigning colors to variable entity 3
 var z=3+3; // expression (not statement)
 >>>>>>> 923f25e513d91adad7595ccef643e4f327f8efad
