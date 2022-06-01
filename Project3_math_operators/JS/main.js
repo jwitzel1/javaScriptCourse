@@ -77,8 +77,10 @@ function doMath7(){  //p is doMath onload and value result is doneMath id html w
 function doMath8(){  //p is doMath onload and value result is doneMath id html write
     // variable declarations and inptu 
    var sub3=-(75);
-   var sub4=sub3++; //why is this returing -75 ??? 
-   var sub5=sub3--;
+   sub4=sub3;
+   sub5=sub3;
+   var sub4++; //why is this returing -75 ??? explained - was trying to combine a=b and a++ in one statement. couldn't. 
+   var sub5--;
    var answer="incrementing (++) the last answer by one gives ";
    answer+=sub4;
    answer+=" and decrementing (--) by one gives ";
