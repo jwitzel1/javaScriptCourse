@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>countdown and slideshow</title>
+  <link rel="stylesheet" type="text/css" href="CSS/main.css">
   <script src="JS/main.js"></script>
-  <script rel="stylesheet" type="text/css" href="CSS/main.css"></script>
+  
 </head>
     <body>
-      <div id="slideshowDiv">
+      <div class="groupDiv">
         <h1>The disease of time - see it's effects in our slideshow</h1>
+        <h3>click the dots or arrows to scroll through the disease progression... </h3>
         <!-- below div is the container for slideshow -->
         <div class="slideshow-container">
 
@@ -37,16 +39,16 @@
         </div> <!-- end class="slideshow-container" div-->
         <br>
 
-        <!-- The dots/circles (where you go?) -->
+        <!-- The dots/circles  -->
         <div style="text-align:center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>  
 
-      </div> <!--end slideshowDiv-->
-
-      <div id="timerDiv"> <!-- previous timer code-->
+      </div> <!--end groupDiv-->
+      <div class="groupDiv">&nbsp;<br /></div>
+      <div class="groupDiv" id="timerDiv"> <!-- previous timer code-->
         <p>Wake me when it's time!</p>
         <p>How many seconds would you like to set your alarm for?</p>
         <input id="seconds" value="" />
