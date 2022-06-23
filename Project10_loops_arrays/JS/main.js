@@ -69,5 +69,5 @@ function checkOutBook(){
                 return ("The book titled "+ this.title+ " was written in "+ this.year + " by " + this.author);
             }
     };
-    document.getElementById("o1").innerHTML = book1.descr;
+    document.getElementById("o1").innerHTML = book1.descr();
 }
