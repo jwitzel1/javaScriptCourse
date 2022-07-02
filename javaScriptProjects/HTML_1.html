@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>javascript projects</title>
+  <script src="JavaScript/JavaScript_1.js" defer></script>
+</head>
+    <body">
+        <h1>Fact Finder based on what decade were you born</h1>
+        <h3>If your decade is not listed, you're too young, or old!</h3>
+        <label=for"decade">Select the decade of your birth from the list below:</label>
+        <select name="decade" id="decade">
+            <option value="1930">1930s</option>
+            <option value="1940">1940s</option>
+            <option value="1950">1950s</option>
+            <option value="1960">1960s</option>
+            <option value="1970">1970s</option>
+            <option value="1980">1980s</option>
+            <option value="1990">1990s</option>
+            <option value="2000">2000s</option>
+            <option value="2010">2010s</option>
+            <option value="2020">2020s</option>
+        </select>
+        <button onclick="getAge()">Tell me about myself</button>
+        <p id="results" class="displayText"></p>
+        <div>
+            <h5>Canvas</h5>
+            <canvas id="canvasID" width="300" height="300" style="border:3px solid red;">
+                <script>
+                        //size is 300 x 300. do circles decrement by 10 with radious 130 to start.
+                    var s=130;
+                    var d=20;
+                    
+                        var c = document.getElementById("canvasID");
+                        var ctx = c.getContext("2d");
+
+                        var grd = ctx.createLinearGradient(0, 0, 170, 0);
+                        grd.addColorStop(0, "blue");
+                        grd.addColorStop(1, "green");
+
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(0, 0, 1000, 1000);
+
+                        ctx.beginPath();
+                       
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.arc(s,s,s,0,2*Math.PI); 
+                            s=s-d;
+                            ctx.stroke();
+              
+                      
+                </script>
+            </canvas>
+        </div>
+    </body>
+</html>
