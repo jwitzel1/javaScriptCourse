@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Aweful Restaurant</title>
+		<script src="JS/onePage.js"></script>
+		<link rel="stylesheet" href="CSS/onePage.css">
+
+		<meta charset="utf-8">
+	</head>
+	<body>
+	
+		
+		<h1>The So Bad It's Good Restaurant</title></h1>
+		<section id='sHomeAndNav'>
+			<div id="home">
+				<div>
+					<h3><span>A unique dining experience</span></h3>
+				</div>	
+				<div>
+					<nav>
+						<ul>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#sample">Sample Menu Items</a></li>
+							<li><a href="#challenge">Our Eating Challenge</a></li>
+							<li><a href="#book">Book Now</a></li>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<section id='sAbout'>
+			<div id="about">
+				<div>
+					<h1>Our Story</h1>
+						<div>
+							<h3><span>About Us</span></h3>
+						</div>	
+					<p>
+						We have been operating since 1812 and have always offered food at reasonable prices, but never did have very <em>good</em> food.<br />
+						Since we were the only restaurant in town, this was fine.  But as the town grew, in the late 1990's, and more restaurants opened, we needed to do something to keep our number 1 spot!<br />
+						So - we leveraged what we were really good at - BAD FOOD!! <br />
+						Taking this to a level that approaches art, we are now exclusively serving aweful food.  <br />
+						Is it for everyone? No. But you have to at least <em>try it</em>!  <br />
+						And for some, bad is the new good.  Come check us out! <br />
+						Open noon till late, daily.<br />
+					</p>	
+				</div>
+			</div>
+		</section>
+		
+		<section id='sSample'>
+			<div id="sample">
+				
+				<h1>Picture it!</h1>
+
+						<h3><span>The Menu</span></h3>
+						<h4>SOME OF OUR POPULAR AWEFUL DISHES</h4>
+						<h6>Click a pic for deets</h6>
+					
+						<!--- photos will launch lightbox which has div directly below.  --->
+					<div id="photoHolder">
+							<div class="rowP">
+								<div class="columnP"><img src='./img/food1.jpg' alt='food sample 1' onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food2.jpg' alt='food sample 2' onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food3.jpg' alt='food sample 3' onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+							</div>
+							<div class="rowP">
+								<div class="columnP"><img src='./img/food4.jpg' alt='food sample 4' onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food5.jpg' alt='food sample 5' onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food6.jpg' alt='food sample 6' onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
+							</div>
+							<div class="rowP">
+								<div class="columnP"><img src='./img/food7.jpg' alt='food sample 7' onclick="openModal();currentSlide(7)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food8.jpg' alt='food sample 8' onclick="openModal();currentSlide(8)" class="hover-shadow"></div>
+								<div class="columnP"><img src='./img/food9.jpg' alt='food sample 9' onclick="openModal();currentSlide(9)" class="hover-shadow"></div>
+							</div>
+						
+						<!--- below is lightbox div. hidden until launched.  --->
+						<div id="myModal" class="modal">
+						  <span class="close cursor" onclick="closeModal()">&times;</span>
+						  <div class="modal-content">
+						  
+							  <div class="mySlides">
+								<div class="numbertext">1 / 9</div>
+								<img src="./img/food1.jpg" style="width:100%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">2 / 9</div>
+								<img src="./img/food2.jpg" style="width:100%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">3 / 9</div>
+								<img src="./img/food3.jpg" style="width:100%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">4 /9</div>
+								<img src="./img/food4.jpg" style="width:100%">
+							  </div>
+
+							  <div class="mySlides">
+								<div class="numbertext">5 /9</div>
+								<img src="./img/food5.jpg" style="width:100%">
+							  </div>
+
+							  <div class="mySlides">
+								<div class="numbertext">6 /9</div>
+								<img src="./img/food6.jpg" style="width:100%">
+							  </div>
+
+							  <div class="mySlides">
+								<div class="numbertext">7 /9</div>
+								<img src="./img/food7.jpg" style="width:100%">
+							  </div>
+
+							  <div class="mySlides">
+								<div class="numbertext">8 /9</div>
+								<img src="./img/food8.jpg" style="width:100%">
+							  </div>
+
+							  <div class="mySlides">
+								<div class="numbertext">9 /9</div>
+								<img src="./img/food9.jpg" style="width:100%">
+							  </div>
+							  <!--- next/previous controls -->
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							  <!-- Caption text -->
+							  <div class="caption-container">
+								  <p id="caption"></p>
+							  </div>
+
+							  <!-- thumbnail image controls-->
+								
+									<div class="column">
+										<img class="demo" src="./img/food1.jpg" onclick="currentSlide(1)" alt="1">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food2.jpg" onclick="currentSlide(2)" alt="2">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food3.jpg" onclick="currentSlide(3)" alt="3">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food4.jpg" onclick="currentSlide(4)" alt="4">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food5.jpg" onclick="currentSlide(5)" alt="5">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food6.jpg" onclick="currentSlide(6)" alt="6">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food7.jpg" onclick="currentSlide(7)" alt="7">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food8.jpg" onclick="currentSlide(8)" alt="8">
+									</div>
+									<div class="column">
+										<img class="demo" src="./img/food9.jpg" onclick="currentSlide(9)" alt="9">
+									</div>																																																								  
+							
+						  </div> <!-- end modal content ; -->
+						</div><!-- end modal ; -->
+					</div> <!-- end photo holder div-->
+			</div>
+		</section>
+		
+		
+		<section id='sChallenge'>
+			<div id="challenge">
+				<div>
+					<h1>The Challenge</h1>
+						<div>
+							<h3><span>Leave No Man Behind!</span></h3>
+							<p>
+								If you want the full experience - ask for the challenge!! <br />
+								We will serve a plate of our best worst items, and if you can finish it within an hour - 
+								without throwing up or going to the bathroom - the meal is on us! <br />
+							</p>
+						</div>
+						
+						<div id="video">
+							<iframe width="560" height="315" 
+								src="https://www.youtube.com/embed/38nluI1bwFo?controls=0" 
+								title="The Challenge" frameborder="1" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+							</iframe>
+						</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id='sBook'>
+			<div id="book">
+				<div>
+					<h1>Reservations</h1>
+					<div>
+						<h3><span>Book your best worst eating experience now!</span></h3>
+						<p>
+						<div>
+							<form action="" method="post">
+								<input type="hidden" name="doIt" value='1'>
+								<input type="text" name='pName' placeholder="Name">
+								<input type="text" name='pEmail' placeholder="email address">
+								<input type="text" name='pPhone' placeholder="Phone Number">
+								<br />
+								<input type="text" name='pCount' placeholder="for how many?">
+								<input type="text" name='pWhen' placeholder="For what date and time?">
+								<div>
+									<input type="submit" value="Request Booking Now">
+								</div>
+							</form>
+						</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<div id="footer">
+			<footer>
+				www.soBadItsGood.com &nbsp;|&nbsp; <a href="mailto:gross@sobaditsgood.com" Email Us</a> &nbsp;|&nbsp; 123 Main St. &nbsp;|&nbsp; 555-1212
+			</footer>
+		</div>
+				
+	</body>
+</html>
