@@ -1,0 +1,192 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS --><!--NOTE trying bootstrap v5 ... so some changes necessary.-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Academy Cinemas</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#deals">Deals</a>
+                    </li>
+                </ul>
+                <!-- apparantly form-inline is deprecated and for the life of me cannot get both the search and button to the right, \
+                    nor get the button beside the input vs above/below.  commenting out for now. play later to fix.
+                    update: fixed the span issue. but now the text entry box is big. but livable ... 
+                    -->
+                <div class="container-fluid ">
+                    <form class="d-flex form-inline my-2 my-lg-1 ">
+                        <input class="form-control mr-sm-2" type="search" placeholder="search">
+                        <button class="btn btn-primary my-2 my-sm-0 text-light input-group-append" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid bg-info text-center mb-5">
+            <div class="container">
+                <h1 class="display-4 text-light">Academy Cinemas</h1>
+                <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
+                <br />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <img class="img-fluid" src="./Img/pdx.jpg" alt="" />
+                </div>
+
+                <div class="col-sm" id="about">
+
+                    <h4>Accomodations / About Us:</h4>
+                    <p>Located in beautiful Portland, Oregon's Pearl district, our reels ahve been spinning since 1959.</p>
+                    <p>Showing our guests a great time is our passion and seeing their smiles is our pleaure!</p>
+                    <p>All of our auditoriums are equipped with brand new Christie 3d&reg; sound systems!</p>
+                    <p>Relax in our, extra-wide, plush cusioning recliners.  Our seating arrangement is disability friendly &#9855;.</p>
+
+                </div>
+
+                <div class="col-sm">
+                    <h3>Now Playing:</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#kk">Kong: Skull Island</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#gis">Ghost in the Shell</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#bb">Beauty and the Beast</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-sm" id="showtimes">
+            <h3>Show Times:</h3>
+            <div class="row  justify-content-center">
+                <!-- Showtimes B&B-->
+                <div class="card w-auto col"  id="bb">
+                    <h5 class="card-title">Beauty & Beasty</h5>
+                    <img src="./Img/beautyandthebeast.jpg" class="card-img-top" alt="beauty & beasty">
+                   
+                    <div class="card-body">
+                        <p class="card-text">Which is which - that is the question audiences leave asking... Come see for yourself!</p>
+                        <span class="badge badge-success badge-pill">12:00pm</span>
+                    </div>
+                        <div><hr /></div>
+                        <span class="text-success small">
+                            <span class="badge bg-success rounded-pill">12:00pm</span>
+                            <span class="badge bg-success rounded-pill">1:30pm</span>
+                            <span class="badge bg-success rounded-pill">3:00pm</span>
+                            <span class="badge bg-success rounded-pill">5:30pm</span>
+                            <span class="badge bg-success rounded-pill">7:00pm</span>
+                            <span class="badge bg-success rounded-pill">9:30pm</span>
+                        </span>
+                        <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+                </div>
+                <!-- Showtimes GinS-->
+                <div class="card w-auto col"  id="gis">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <img src="./Img/ghostintheshell.jpg" class="card-img-top" alt="ghost in the shell">
+                    <div class="card-body">
+                        <p class="card-text">Ghosts - could they just be bugs in the matrix? Jump inside and see what's in this shell!</p>
+                    </div>
+                    <div><hr /></div>
+                    <span class="text-success small">
+                        <span class="badge bg-success rounded-pill">12:00pm</span>
+                        <span class="badge bg-success rounded-pill">1:30pm</span>
+                        <span class="badge bg-success rounded-pill">3:00pm</span>
+                        <span class="badge bg-success rounded-pill">5:30pm</span>
+                        <span class="badge bg-success rounded-pill">7:00pm</span>
+                        <span class="badge bg-success rounded-pill">9:30pm</span>
+                    </span>
+                    <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+                </div>
+                <!-- Showtimes KK -->
+                <div class="card w-auto col"  id="kk">
+                    <h5 class="card-title">Kong - Skull Island</h5>
+                    <img src="./Img/kongskullisland.jpg" class="card-img-top" alt="kong island">
+                    <div class="card-body">
+                        <p class="card-text">What every monkey needs ... their own island! Beaches, natural cliffs and waterfalls, and native wildlife. A real dream.<br /><strong>Rated R</strong></p>
+                    </div>
+                    <div><hr /></div>
+                        <span class="text-success small">
+                            <span class="badge bg-success rounded-pill">12:00pm</span>
+                            <span class="badge bg-success rounded-pill">1:30pm</span>
+                            <span class="badge bg-success rounded-pill">3:00pm</span>
+                            <span class="badge bg-success rounded-pill">5:30pm</span>
+                            <span class="badge bg-success rounded-pill">7:00pm</span>
+                            <span class="badge bg-success rounded-pill">9:30pm</span>
+                        </span>
+                        <div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text-center" id="deals">
+            <form>
+                <h1 class="text-primary my-5">Sign Up for Movie Club Rewards!</h1>
+                <div class="form-group my-2">
+                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="container my-5">
+            <ul class="nav nav-inline">
+                <li class="nav-item">
+                    <small><a class="nav-link active" href="#">Movie Rewards</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link active" href="#">Movies@news.org</a></small>
+                </li>
+                <li class="nav-item">
+                    <small><a class="nav-link active" href="#">info@academycinemas.com</a></small>
+                </li>
+                <li class="nav-item">
+                    <small class="nav-link active" href="#">&copy;2019 Academy Cinemas&reg;</small>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
